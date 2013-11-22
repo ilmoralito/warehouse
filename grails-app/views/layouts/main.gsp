@@ -11,7 +11,7 @@
 		<div class="medium-2 columns">
 			<ul class="side-nav">
 				<li><g:link controller="user">Usuarios</g:link></li>
-				<li><g:link controller="user" action="profile">Hola !</g:link></li>
+				<li><g:link controller="user" action="profile">Hola <sec:loggedInUserInfo field="fullName"/>!</g:link></li>
 				<li><g:link controller="logout">Salir</g:link></li>
 			</ul>
 		</div>

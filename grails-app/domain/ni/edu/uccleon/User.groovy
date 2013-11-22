@@ -6,6 +6,7 @@ class User {
 
 	String username
 	String password
+	String fullName
 	boolean enabled = true
 	boolean accountExpired
 	boolean accountLocked
@@ -15,6 +16,7 @@ class User {
 
 	static constraints = {
 		username blank: false, unique: true
+		fullName blank:false
 		password blank: false
 	}
 
